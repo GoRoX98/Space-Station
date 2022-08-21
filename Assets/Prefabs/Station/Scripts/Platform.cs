@@ -5,8 +5,8 @@ using UnityEngine;
 [System.Serializable]
 public class Platform : MonoBehaviour
 {
-    [SerializeField] private Guns _currentGun;
-    [SerializeField] private List<Guns> _gunList;
+    [SerializeField] private GunsInfo _currentGun;
+    [SerializeField] private List<GunsInfo> _gunList;
 
     private void Awake()
     {

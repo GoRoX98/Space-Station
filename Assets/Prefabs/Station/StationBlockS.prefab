@@ -10,6 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1814524977112647656}
   - component: {fileID: 2970786747968133338}
+  - component: {fileID: 7907564057119038278}
+  - component: {fileID: 156335976893103072}
   m_Layer: 0
   m_Name: StationBlockS
   m_TagString: Untagged
@@ -82,3 +84,58 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &7907564057119038278
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3539661888857564737}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 207f40462f5933a409b809f99c5822ba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _currentGun: {fileID: 0}
+  _gunList:
+  - {fileID: 11400000, guid: 01d8c2288b3d99c4e9022045ef18752b, type: 2}
+--- !u!60 &156335976893103072
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3539661888857564737}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1.06, y: 0.87}
+    newSize: {x: 1.06, y: 0.87}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0.05386749, y: 0.30899233}
+      - {x: -0.1160682, y: 0.435}
+      - {x: -0.13138415, y: 0.4280191}
+      - {x: -0.5206921, y: 0.043365054}
+      - {x: -0.520692, y: 0.017326966}
+      - {x: -0.41022065, y: -0.086384155}
+      - {x: -0.33603057, y: -0.15410745}
+      - {x: -0.19254763, y: -0.24776831}
+      - {x: -0.01836297, y: -0.34374094}
+      - {x: 0.15581743, y: -0.40125877}
+      - {x: 0.37734747, y: -0.44048023}
+      - {x: 0.53, y: -0.435}
+      - {x: 0.53, y: 0.185}
+      - {x: 0.37156612, y: 0.19246346}
+      - {x: 0.22, y: 0.235}

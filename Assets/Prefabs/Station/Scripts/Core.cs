@@ -6,8 +6,8 @@ public class Core : MonoBehaviour
 {
     private int _health = 1;
     [SerializeField] private bool _isSelect;
-    [SerializeField] private Guns _currentGun;
-    [SerializeField] private List<Guns> _guns;
+    [SerializeField] private GunsInfo _currentGun;
+    [SerializeField] private List<GunsInfo> _guns;
 
     [SerializeField] private List<Platform> _platforms;
 

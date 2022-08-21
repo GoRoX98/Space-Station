@@ -202,7 +202,7 @@ GameObject:
   - component: {fileID: 9030874247802512617}
   - component: {fileID: 9030874247802512618}
   - component: {fileID: 7455676420843263802}
-  - component: {fileID: 4032986067784439680}
+  - component: {fileID: 8324847251358917556}
   m_Layer: 0
   m_Name: Core
   m_TagString: Untagged
@@ -291,35 +291,24 @@ MonoBehaviour:
   _isSelect: 0
   _currentGun: {fileID: 0}
   _guns:
-  - {fileID: 4032986067784439680}
+  - {fileID: 11400000, guid: a58fb005ffe2b23448dc98ed8ec70401, type: 2}
   _platforms: []
---- !u!114 &4032986067784439680
-MonoBehaviour:
+--- !u!58 &8324847251358917556
+CircleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 9030874247802512619}
   m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d901dd63f04a31941b9a67091205e212, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _gunSprite: {fileID: 0}
-  _bullet: {fileID: 0}
-  _coreGun: 1
-  _target: {fileID: 0}
-  _isActive: 1
-  CurrentLvl: 1
-  DmgProgression: 
-  SpeedProgression: []
-  RadiusProgression: []
-  UpgradeCost: 
-  Dmg: 0
-  Speed: 0
-  TypeDmg: 0
-  DmgRadius: 0
-  BuildCost: 0
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.91
 --- !u!1001 &3079025217509018
 PrefabInstance:
   m_ObjectHideFlags: 0
