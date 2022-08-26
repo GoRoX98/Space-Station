@@ -1,6 +1,11 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+    public enum DmgType
+    {
+        Point,
+        Splash
+    }
 
 [CreateAssetMenu(fileName = "Gun", menuName = "Gameplay/New gun")]
 public class GunsInfo : ScriptableObject
@@ -11,11 +16,6 @@ public class GunsInfo : ScriptableObject
     [SerializeField] protected bool _coreGun;
     [SerializeField] private int _maxLvl;
 
-    public enum DmgType
-    {
-        Point,
-        Splash
-    }
 
     [Header("Specifications")]
     [SerializeField] protected List<int> DmgProgression;

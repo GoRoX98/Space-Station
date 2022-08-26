@@ -13,7 +13,12 @@ MonoBehaviour:
   m_Name: BaseRocket
   m_EditorClassIdentifier: 
   _sprite: {fileID: 21300000, guid: 1c4d2eb687f440b4dbfd6558de67010e, type: 3}
-  _isActive: 1
-  Health: 5
-  Dmg: 1
-  Speed: 2
+  _typeOfEnemy: 0
+  _effect: 0
+  _value: 0
+  _maxLvl: 10
+  HealthProgression: 
+  DmgProgression: 
+  SpeedProgression: []
+  TypeOfDmg: 0
+  RadiusDmgProgression: []

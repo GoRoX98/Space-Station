@@ -2,6 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+    public enum Effects
+    {
+        None,
+        Freeze
+    }
+
 [CreateAssetMenu(fileName = "Enemy", menuName = "Gameplay/New Enemy")]
 public class EnemyInfo : ScriptableObject
 {
@@ -12,13 +18,6 @@ public class EnemyInfo : ScriptableObject
         Ship
     }
 
-    public enum Effects
-    {
-        None,
-        Freeze
-    }
-
-    [Header("Main")]
     [SerializeField] private Sprite _sprite;
     [SerializeField] private EnemyType _typeOfEnemy;
     [SerializeField] private Effects _effect = Effects.None;
@@ -26,10 +25,11 @@ public class EnemyInfo : ScriptableObject
     [SerializeField] private int _maxLvl;
 
 
-    [Header("Specifications")]
     [SerializeField] protected List<int> HealthProgression;
     [SerializeField] protected List<int> DmgProgression;
     [SerializeField] protected List<float> SpeedProgression;
+    [SerializeField] protected DmgType TypeOfDmg = DmgType.Point;
+    [SerializeField] protected List<float> RadiusDmgProgression;
 
     public int GetMaxLvl => _maxLvl;
     public int GetValue => _value;

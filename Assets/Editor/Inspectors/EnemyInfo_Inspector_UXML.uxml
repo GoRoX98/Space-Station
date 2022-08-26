@@ -1,0 +1,5 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="True">
+    <ui:Label text="Test" display-tooltip-when-elided="true" />
+    <ui:DropdownField label="Type of Enemy" index="-1" binding-path="_typeOfEnemy" choices="EnemyType" />
+    <ui:Foldout text="Default Inspector" name="Default_Inspector" />
+</ui:UXML>
