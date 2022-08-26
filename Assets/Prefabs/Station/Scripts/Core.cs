@@ -8,6 +8,7 @@ public class Core : MonoBehaviour
     [SerializeField] private bool _isSelect;
     [SerializeField] private GunsInfo _currentGun;
     [SerializeField] private List<GunsInfo> _guns;
+    [SerializeField] bool _isActive = true;
 
     [SerializeField] private List<Platform> _platforms;
 
@@ -24,7 +25,7 @@ public class Core : MonoBehaviour
 
     private void Update()
     {
-        if(_isSelect && _currentGun.IsActive)
+        if(_isSelect && _isActive)
         {
             _mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
             _direction = _mousePosition - transform.position;

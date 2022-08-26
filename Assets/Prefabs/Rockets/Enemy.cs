@@ -2,9 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Rocket : MonoBehaviour
+public class Enemy : MonoBehaviour
 {
-    [SerializeField] private RocketInfo _typeRocket;
+    [SerializeField] private EnemyInfo _typeRocket;
     [SerializeField] private GameObject _target;
 
     private void Start()
