@@ -3,7 +3,7 @@ using UnityEngine.UIElements;
 using UnityEditor;
 using System.Collections.Generic;
 
-[CustomEditor(typeof(EnemyInfo))]
+//[CustomEditor(typeof(EnemyInfo))]
 public class EnemyInfo_Inspector : Editor
 {
     #region SerializedProperties
