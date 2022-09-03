@@ -17,16 +17,16 @@ public class Enemy : MonoBehaviour
 
     public int RocketValue => _value;
 
-    public Enemy(string name, EnemyTypes enemyType, Effects effect, float health, float damage, float speed, int value, Sprite sprite)
+    public void Init(EnemyInfo info, int lvl)
     {
-        Name = name;
-        _enemyType = enemyType;
-        _effect = effect;
-        _health = health;
-        _damage = damage;
-        _speed = speed;
-        _value = value;
-        _sprite = sprite;
+        Name = info.Name;
+        _enemyType = info.EnemyType;
+        _effect = info.Effect;
+        _health = info.GetHealth(lvl);
+        _damage = info.GetDmg(lvl);
+        _speed = info.GetSpeed(lvl);
+        _value = info.Value;
+        _sprite = info.Sprite;
     }
 
     private void Awake()

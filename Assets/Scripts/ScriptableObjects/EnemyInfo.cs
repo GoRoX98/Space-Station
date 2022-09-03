@@ -34,6 +34,7 @@ public class EnemyInfo : ScriptableObject
     public string Name => _enemyName;
     public int MaxLvl => _maxLvl;
     public int Value => _value;
+    public Sprite Sprite => _sprite;
     public float GetHealth(int lvl) => HealthProgression[lvl - 1];
     public float GetDmg(int lvl) => DmgProgression[lvl - 1];
     public float GetSpeed(int lvl) => SpeedProgression[lvl - 1];
@@ -41,9 +42,8 @@ public class EnemyInfo : ScriptableObject
     public Effects Effect => _effect;
 
 
-    public Enemy GetData(int lvl)
+    public EnemyInfo GetData(int lvl)
     {
-        Enemy newEnemy = new Enemy(_enemyName, _typeOfEnemy, _effect, GetHealth(lvl), GetDmg(lvl), GetSpeed(lvl), _value, _sprite);
-        return newEnemy;
+        return this;
     }
 }

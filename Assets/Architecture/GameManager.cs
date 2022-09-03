@@ -5,7 +5,7 @@ using UnityEngine;
 public class GameManager : MonoBehaviour
 {
     [SerializeField] GameObject _enemyPrefab;
-    [SerializeField] private List<GameObject> _spawnPoints;
+    [SerializeField] private Spawner _spawner;
     [SerializeField] private List<EnemyInfo> _enemyPatterns;
     [SerializeField] private int _wavePoints;
     [SerializeField] private int _complexityLvl;
@@ -20,9 +20,8 @@ public class GameManager : MonoBehaviour
 
     private void SpawnEnemy()
     {
-        GameObject spawnPoint = _spawnPoints[Random.Range(0, _spawnPoints.Count - 1)];
-        GameObject enemyGO = Instantiate(_enemyPrefab, spawnPoint.transform);
-        Enemy enemy = enemyGO.AddComponent<Enemy>();
-        enemy = _enemyPatterns[0].GetData(1);
+        GameObject enemyGO = Instantiate(_enemyPrefab, _spawner.GetRandomSpawn());
+        Enemy enemy = enemyGO.AddComponent<Enemy>(); 
+        enemy.Init(_enemyPatterns[0].GetData(1), 1);
     }
 }
