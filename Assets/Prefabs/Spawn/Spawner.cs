@@ -5,8 +5,17 @@ using UnityEngine;
 public class Spawner : MonoBehaviour
 {
     [SerializeField] private GameObject _prefab;
-    [SerializeField] private Transform _spawnPoint;
     [SerializeField] private List<Transform> _spawnList;
+
+    public void GenerateSpawns(int count)
+    {
+        float angleStep = 360 / count;
+        float angle = 0;
+        for(int i = 0; i < count; i++)
+        {
+            
+        }
+    }
 
     public Transform GetRandomSpawn()
     {
